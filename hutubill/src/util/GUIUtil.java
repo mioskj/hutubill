@@ -14,12 +14,11 @@ import javax.swing.JTextField;
 
 
 public class GUIUtil {
-	private static String imageFolder = "e:/EclipseGitPlace/hutubill/hutbubill/img";//还未导入图片文件
+	private static String imageFolder = "E:\\EclipseGitPlace\\hutubill\\hutubill\\img";//还未导入图片文件
 	
 	public static void setImageIcon(JButton b,String fileName,String tip) {
 		ImageIcon i = new ImageIcon(new File(imageFolder, fileName).getAbsolutePath());
 		b.setIcon(i);
-		b.setPreferredSize(new Dimension(61,81));
 		b.setToolTipText(tip);
 		b.setVerticalTextPosition(JButton.BOTTOM);
 		b.setHorizontalTextPosition(JButton.CENTER);
